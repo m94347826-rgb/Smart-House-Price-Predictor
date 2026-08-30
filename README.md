@@ -52,8 +52,10 @@ house-price-prediction-web-app/
 ├── app.py
 ├── requirements.txt
 └── README.md
-git clone [https://github.com/m943/Smart-House-Price-Predictor.git](https://github.com/m943/Smart-House-Price-Predictor.git)
+```
+git clone https://github.com/m943/Smart-House-Price-Predictor.git
 cd Smart-House-Price-Predictor
+
 pip install -r requirements.txt
 python model/train_model.py
 model/house_price_model.pkl
@@ -63,3 +65,4 @@ pandas==2.1.1
 scikit-learn==1.3.2
 numpy==1.26.5
 joblib==1.3.2
+```
