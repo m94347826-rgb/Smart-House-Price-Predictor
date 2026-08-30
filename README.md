@@ -20,4 +20,4 @@ This project takes you through a complete data science journey. We start by clea
 1. Clone the repo: git clone [https://github.com/m943/Smart-House-Price-Predictor.git](https://github.com/m943/Smart-House-Price-Predictor.git)
 2. Install requirements: pip install -r requirements.txt
 3. Run and enjoy predictions!
-4. 
+
