@@ -17,8 +17,7 @@ This project takes you through a complete data science journey. We start by clea
 - **Joblib**: Used for saving and loading the trained model.
 
 ## How to Run This Project
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/m943/Smart-House-Price-Predictor.git](https://github.com/m943/Smart-House-Price-Predictor.git)
-   pip install -r requirements.txt
-   
+1. Clone the repo: git clone [https://github.com/m943/Smart-House-Price-Predictor.git](https://github.com/m943/Smart-House-Price-Predictor.git)
+2. Install requirements: pip install -r requirements.txt
+3. Run and enjoy predictions!
+4. 
