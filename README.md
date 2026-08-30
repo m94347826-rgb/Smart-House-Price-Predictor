@@ -1,26 +1,69 @@
 # Smart House Price Predictor 🏠
 
-A smart machine learning project designed to predict house prices easily based on important details like area size, number of bedrooms, and bathrooms.
+A complete machine learning web application that predicts house prices based on user inputs such as area size, number of bedrooms, and bathrooms. The system provides instant predictions through an intuitive web interface.
 
-## Overview
+## Video Demonstration
 
-This project takes you through a complete data science journey. We start by cleaning and preparing the data, then train a machine learning model (Linear Regression) to learn house market patterns, and finally save the trained model so it can predict prices instantly.
+https://github.com/m943/Smart-House-Price-Predictor/assets/house-price-prediction.mp4
 
-## Key Features
+## Project Overview
 
-- **Instant Predictions:** Get accurate house price estimates right away.
-- **Trained AI Model:** Uses a smart algorithm saved securely using Joblib (`house_model.pkl`).
-- **Clean Structure:** Well-organized project files and clean code architecture.
+This application allows users to enter property details and predicts house prices using a trained machine learning model.
+It follows a complete machine learning lifecycle:
+- Data preprocessing and feature engineering
+- Model training using regression algorithms
+- Model evaluation and persistence
+- Deployment using Flask
+- Professional frontend integration for real-time predictions
 
-## Tech Stack
+## Features
 
-- **Python:** The main programming language.
-- **Scikit-Learn:** Used for machine learning and training the model.
-- **Pandas & NumPy:** Used for organizing and handling data.
-- **Joblib:** Used for saving and loading the trained model.
+- **Predicts House Prices via Machine Learning:** Predicts house prices using a trained regression model.
+- **Simple, Fast, and Interactive Web Interface:** Responsive design for entering property details.
+- **Instant Price Predictions:** Users receive expected house prices immediately upon form submission.
+- **Clean Project Structure:** Well-organized directories for data, models, frontend templates, and backend logic.
+- **Built with Flask Integration:** The backend is built using the Flask web framework.
+- **Cloud Deployment Ready:** Easily deployable on standard cloud computing platforms.
 
-## How to Run This Project
+## Dataset Information
 
-1. Clone the repository using Git.
-2. Install the required dependencies using: `pip install -r requirements.txt`
-3. Run the project script to get instant predictions!
+The housing dataset used to train the regression model.
+
+**Features:**
+- Area size (sq ft)
+- Number of bedrooms
+- Number of bathrooms
+
+**Target House Price:**
+The model predicts house prices based on these characteristics.
+
+## Project Structure
+
+```text
+house-price-prediction-web-app/
+├── data/
+│   └── house_data.csv
+├── model/
+│   └── train_model.py
+├── templates/
+│   └── index.html
+├── static/
+│   └── style.css
+├── assets/
+│   └── homepage.png
+├── house_price_model.pkl
+├── scaler.pkl
+├── app.py
+├── requirements.txt
+└── README.md
+git clone [https://github.com/m943/Smart-House-Price-Predictor.git](https://github.com/m943/Smart-House-Price-Predictor.git)
+cd Smart-House-Price-Predictor
+pip install -r requirements.txt
+python model/train_model.py
+model/house_price_model.pkl
+python app.py
+Flask==2.3.5
+pandas==2.1.1
+scikit-learn==1.3.2
+numpy==1.26.5
+joblib==1.3.2
