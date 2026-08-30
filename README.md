@@ -1,4 +1,4 @@
-# Smart House Price Predictor 🏠
+# Smart House Price Predictor 
 
 A machine learning project designed to estimate house prices based on features such as area, bedrooms, and bathrooms. Developed using Python, scikit-learn, and Joblib.
 
