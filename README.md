@@ -31,3 +31,32 @@ The housing dataset used to train the regression model.
 
 **Target House Price:**
 The model predicts house prices based on these characteristics.
+## Project Structure
+
+house-price-prediction-web-app/
+├── data/ house_data.csv
+├── model/ train_model.py
+├── templates/ index.html
+├── static/ style.css
+├── assets/ homepage.png
+├── house_price_model.pkl
+├── scaler.pkl
+├── app.py
+├── requirements.txt
+└── README.md
+
+## Installation & Running Guide
+
+git clone https://github.com/m943/Smart-House-Price-Predictor.git
+cd Smart-House-Price-Predictor
+pip install -r requirements.txt
+python model/train_model.py
+python app.py
+
+## Requirements
+
+Flask==2.3.5
+pandas==2.1.1
+scikit-learn==1.3.2
+numpy==1.26.5
+joblib==1.3.2
