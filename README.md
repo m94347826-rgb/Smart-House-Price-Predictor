@@ -2,10 +2,6 @@
 
 A complete machine learning web application that predicts house prices based on user inputs such as area size, number of bedrooms, and bathrooms. The system provides instant predictions through an intuitive web interface.
 
-## Video Demonstration
-
-https://github.com/m943/Smart-House-Price-Predictor/assets/house-price-prediction.mp4
-
 ## Project Overview
 
 This application allows users to enter property details and predicts house prices using a trained machine learning model.
