@@ -1,63 +1,92 @@
-# Smart House Price Predictor 🏠
+Smart House Price Predictor
 
-A complete machine learning web application that predicts house prices based on user inputs such as area size, number of bedrooms, and bathrooms. The system provides instant predictions through an intuitive web interface.
+A machine learning web application that predicts house prices based on user inputs such as area size, number of bedrooms, and number of bathrooms. The system provides instant predictions through a simple web interface.
 
-## Project Overview
+Project Overview
 
-This application allows users to enter property details and predicts house prices using a trained machine learning model. It follows a complete machine learning lifecycle:
+This application allows users to enter property details and predicts house prices using a trained machine learning model. It follows a machine learning workflow that includes:
+
 - Data preprocessing and feature engineering
 - Model training using regression algorithms
-- Model evaluation and persistence
-- Deployment using Flask
-- Professional frontend integration for real-time predictions
+- Model evaluation and model persistence
+- Flask integration
+- Frontend integration for real-time predictions
 
-## Features
+Features
 
-- **Predicts House Prices via Machine Learning:** Predicts house prices using a trained regression model.
-- **Simple, Fast, and Interactive Web Interface:** Responsive design for entering property details.
-- **Instant Price Predictions:** Users receive expected house prices immediately upon form submission.
-- **Clean Project Structure:** Well-organized directories for data, models, frontend templates, and backend logic.
-- **Built with Flask Integration:** The backend is built using the Flask web framework.
-- **Cloud Deployment Ready:** Easily deployable on standard cloud computing platforms.
+- House Price Prediction: Predicts house prices using a trained regression model.
+- Simple Web Interface: Allows users to enter property details and get a prediction.
+- Instant Predictions: Returns the predicted house price after submitting the input.
+- Clean Project Structure: Separates the data, model, frontend, and backend files.
+- Flask Integration: Uses Flask to connect the machine learning model with the web application.
 
-## Dataset Information
+Dataset Information
 
-The housing dataset used to train the regression model.
+The housing dataset is used to train the regression model.
 
-**Features:**
+Features:
+
 - Area size (sq ft)
 - Number of bedrooms
 - Number of bathrooms
 
-**Target House Price:**
-The model predicts house prices based on these characteristics.
+Target:
 
-## Project Structure
+- House price
 
-house-price-prediction-web-app/
-├── data/ house_data.csv
-├── model/ train_model.py
-├── templates/ index.html
-├── static/ style.css
-├── assets/ homepage.png
+Project Structure
+
+Smart-House-Price-Predictor/
+│
+├── data/
+│   └── house_data.csv
+│
+├── model/
+│   └── train_model.py
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   └── style.css
+│
+├── assets/
+│   └── homepage.png
+│
 ├── house_price_model.pkl
 ├── scaler.pkl
 ├── app.py
 ├── requirements.txt
 └── README.md
 
-## Installation & Running Guide
+Installation and Running Guide
+
+Clone the repository and move into the project directory:
 
 cd Smart-House-Price-Predictor
+
+Install the required dependencies:
+
 pip install -r requirements.txt
+
+Train the machine learning model:
+
 python model/train_model.py
+
+Run the Flask application:
+
 python app.py
 
-## Requirements
+Then open the local address provided by Flask in your browser.
 
-Flask==2.3.5
-pandas==2.1.1
-scikit-learn==1.3.2
-numpy==1.26.5
-joblib==1.3.2
+Requirements
 
+The project uses the following Python libraries:
+
+Flask
+pandas
+scikit-learn
+numpy
+joblib
+
+The exact versions should be specified in "requirements.txt" based on the environment used to develop and test the project.
