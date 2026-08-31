@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>التنبؤ بأسعار المنازل</title>
+    <title>House Price Predictor</title>
     <style>
         body { font-family: Tahoma, sans-serif; background-color: #f4f7f6; text-align: center; padding: 50px; }
         .container { background: white; padding: 30px; border-radius: 10px; display: inline-block; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
@@ -13,12 +13,11 @@
 </head>
 <body>
     <div class="container">
-        <h2>نموذج التنبؤ بأسعار المنازل</h2>
+        <h2>Smart House Price Predictor</h2>
         <form action="/predict" method="POST">
-            <input type="text" name="area" placeholder="مساحة المنزل (قدم مربع)" required><br>
-            <input type="number" name="bedrooms" placeholder="عدد غرف النوم" required><br>
-            <input type="number" name="bathrooms" placeholder="عدد الحمامات" required><br>
-            <button type="submit">توقع السعر</button>
+            <input type="number" name="sqft" placeholder="House Area (sqft)" required><br>
+            <input type="number" name="bedrooms" placeholder="Number of Bedrooms" required><br>
+            <button type="submit">Predict Price</button>
         </form>
         {% if prediction_text %}
             <h3 style="color: #007bff; margin-top: 20px;">{{ prediction_text }}</h3>
