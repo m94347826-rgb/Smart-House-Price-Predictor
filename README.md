@@ -1,6 +1,6 @@
 Smart House Price Predictor
 
-A machine learning web application that predicts house prices based on user inputs such as area size, number of bedrooms, and number of bathrooms. The system provides instant predictions through a simple web interface.
+A machine learning web application that predicts house prices based on user inputs such as area size, number of bedrooms, and bathrooms. The system provides instant predictions through a simple web interface.
 
 Project Overview
 
@@ -37,22 +37,16 @@ Target:
 Project Structure
 
 Smart-House-Price-Predictor/
-│
 ├── data/
 │   └── house_data.csv
-│
 ├── model/
 │   └── train_model.py
-│
 ├── templates/
 │   └── index.html
-│
 ├── static/
 │   └── style.css
-│
 ├── assets/
 │   └── homepage.png
-│
 ├── house_price_model.pkl
 ├── scaler.pkl
 ├── app.py
@@ -83,10 +77,11 @@ Requirements
 
 The project uses the following Python libraries:
 
-Flask
-pandas
-scikit-learn
-numpy
-joblib
+- Flask
+- pandas
+- scikit-learn
+- numpy
+- joblib
 
 The exact versions should be specified in "requirements.txt" based on the environment used to develop and test the project.
+
