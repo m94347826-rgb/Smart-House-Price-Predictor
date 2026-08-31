@@ -4,7 +4,8 @@ import numpy as np
 
 app = Flask(__name__)
 
-model = joblib.load('house_price_model.pkl')
+# Load the trained model using the exact filename on GitHub
+model = joblib.load('house_price_model (7).pkl')
 
 @app.route('/')
 def home():
@@ -13,17 +14,18 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
-        features = [
-            float(request.form['area']),
-            int(request.form['bedrooms']),
-            int(request.form['bathrooms'])
-        ]
-        final_features = [np.array(features)]
-        prediction = model.predict(final_features)
+        # Get sqft and bedrooms matching our model features
+        sqft = float(request.form['sqft'])
+        bedrooms = int(request.form['bedrooms'])
+        
+        # Prepare features for prediction
+        features = np.array([[sqft, bedrooms]])
+        prediction = model.predict(features)
         output = round(prediction[0], 2)
-        return render_template('index.html', prediction_text=f'السعر المتوقع للمنزل هو: ${output:,.2f}')
+        
+        return render_template('index.html', prediction_text=f'Estimated House Price: ${output:,.2f}')
     except Exception as e:
-        return render_template('index.html', prediction_text=f'حدث خطأ في المدخلات: {str(e)}')
+        return render_template('index.html', prediction_text=f'Error in input values: {str(e)}')
 
 if __name__ == '__main__':
     app.run(debug=True)
