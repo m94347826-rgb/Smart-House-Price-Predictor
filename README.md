@@ -36,6 +36,7 @@ Target:
 
 Project Structure
 
+```text
 Smart-House-Price-Predictor/
 ├── data/
 │   └── house_data.csv
@@ -52,6 +53,7 @@ Smart-House-Price-Predictor/
 ├── app.py
 ├── requirements.txt
 └── README.md
+```
 
 Installation and Running Guide
 
